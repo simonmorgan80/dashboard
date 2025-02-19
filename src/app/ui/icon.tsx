@@ -1,6 +1,6 @@
 type IconProps = {
-    id: string,
-    style?: string,
+    id: string;
+    style?: string;
     size?: 'sm' | 'lg'
 }
 

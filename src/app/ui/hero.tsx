@@ -2,9 +2,9 @@ import Notification from '@/app/ui/notification';
 import type { NotificationType } from '@/app/ui/notification';
 
 type HeroProps = {
-    title?: string,
-    children?: React.ReactNode,
-    notifications?: NotificationType[],
+    title?: string;
+    children?: React.ReactNode;
+    notifications?: NotificationType[];
     showDate?: boolean
 }
 
@@ -33,7 +33,7 @@ export default function Hero( { title, children, notifications, showDate } : Her
                             <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-end mt-4 lg:mt-0">
                                 {notifications.map((notification, index) => {
                                     return (
-                                        <div className="flex-1">
+                                        <div key={index} className="flex-1">
                                             <Notification notification={notification} />
                                         </div>
                                     )
