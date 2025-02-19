@@ -9,9 +9,9 @@ const notifications: NotificationType[] = [
 ];
 
 const SALES_COLUMNS = [
-    { id: 'data_1', label: 'SKU per location' },
-    { id: 'data_2', label: 'Current vs proposed forecast' },
-    { id: 'data_3', label: 'Historic demand vs forecast demand' }
+    { id: 'data_1', label: 'Header 1' },
+    { id: 'data_2', label: 'Header 2' },
+    { id: 'data_3', label: 'Header 3' }
 ];
 
 export default function Home() {
