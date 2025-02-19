@@ -1,5 +1,5 @@
-import type { NotificationType } from '@/app/lib/type-defs';
-import SALES_DATA from '@/app/data/DATA';
+import type { NotificationType } from '@/lib/type-defs';
+import SALES_DATA from '@/data/DATA';
 import DataTable from "@/app/ui/data-table";
 import Hero from "@/app/ui/hero";
 

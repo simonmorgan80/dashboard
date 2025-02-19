@@ -1,5 +1,5 @@
 import Notification from '@/app/ui/notification';
-import type { NotificationType } from '@/app/ui/notification';
+import type { NotificationType } from '@/lib/type-defs';
 
 type HeroProps = {
     title?: string;

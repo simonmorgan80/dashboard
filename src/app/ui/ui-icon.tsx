@@ -6,6 +6,10 @@ type IconProps = {
 
 export default function Icon( { id, style, size } : IconProps ) {
 
+    if (!id) {
+        return;
+    }
+
     let className = style;
 
     switch ( size ) {
@@ -23,7 +27,7 @@ export default function Icon( { id, style, size } : IconProps ) {
     return (
         <>
             <svg className={`inline-block fill-current stroke-current ${className}`} height="24px" width="24px" aria-hidden="true" focusable="false">
-                <use xlinkHref={`/images/icons/symbol-defs.svg#icon-${ id }`}></use>
+                <use xlinkHref={`/images/icons/symbol-defs.svg#icon-${id}`}></use>
             </svg>
         </>
     )

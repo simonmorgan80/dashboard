@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
-import type { DataTableItemType } from '@/app/lib/type-defs';
-import Icon from './icon';
+import type { DataTableItemType } from '@/lib/type-defs';
+import Icon from '@/app/ui/ui-icon';
 
 export default function DataTableItem( { dataItem, columns } : DataTableItemType ) {
     const [ isOpen, setIsOpen ] = useState(false);

@@ -8,27 +8,28 @@ export type DataTableType = {
 }
 
 export type DataTableItemType = {
-    [key: string]: any
+    
     columns: {
         id: string;
         label: string;
     }[],
+    // [key: string]: string;
     dataItem: DataItemType
 }
 
 export type DataItemType = {
-    [key: string]: any
     id: string;
     data_1: string;
     data_2: string;
     data_3: string;
     subdatasets?: {
-        [key: string]: any
+        [key: string]: string;
         data_1: string;
         data_2: string;
-        data_3: string
-    }[]
-}
+        data_3: string;
+    }[];
+    [key: string]: string | undefined | { data_1: string; data_2: string; data_3: string }[];
+};
 
 export type NotificationType = {
     title: string;

@@ -1,4 +1,4 @@
-import type { NotificationType } from '@/app/lib/type-defs';
+import type { NotificationType } from '@/lib/type-defs';
 
 export default function Notification( { notification } :{ notification : NotificationType } ) {
     return (

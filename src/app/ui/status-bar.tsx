@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import Icon from './icon';
+import Icon from '@/app/ui/ui-icon';
 
 export default function StatusBar() {
     const [searchTerm, setSearchTerm ] = useState('');

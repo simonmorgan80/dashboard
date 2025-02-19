@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from '@/app/ui/footer';
 import Header from '@/app/ui/header';
-import StatusBar from "./ui/status-bar";
+import StatusBar from "@/app/ui/status-bar";
 import "./globals.css";
 
 const inter = Inter({
